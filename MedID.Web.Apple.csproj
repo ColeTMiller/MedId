@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNet.SignalR" Version="2.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Views\Home\Account.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Views\Home\Account.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\Account\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="Controllers\AccountSettings.json" />
+    <Content Remove="Views\Account\CreatingAC.cshtml" />
+    <Content Remove="Views\Account\Forgetpassword.cshtml" />
+    <Content Remove="Views\Account\Login.cshtml" />
+  </ItemGroup>
+</Project>
